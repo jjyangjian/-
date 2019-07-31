@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JJJianceController">
+            <connections>
+                <outlet property="contentView" destination="7Sc-35-qNh" id="hZb-bG-FhH"/>
+                <outlet property="topButton0" destination="UPm-Ad-AsM" id="Jdz-2X-sNj"/>
+                <outlet property="topButton1" destination="ffL-pJ-MSz" id="DIf-Di-RVE"/>
+                <outlet property="topButton2" destination="ooU-c3-pvc" id="iYb-qi-egq"/>
+                <outlet property="topButton3" destination="FNX-oZ-g2G" id="uiy-Df-YRx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-35-qNh">
+                    <rect key="frame" x="0.0" y="83" width="414" height="779"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-f5-s6f">
+                    <rect key="frame" x="0.0" y="44" width="414" height="35"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-Ad-AsM">
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="实时" backgroundImage="jiance_topButton_n.png">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="jiance_topButton_s.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="topButtonClick:" destination="-1" eventType="touchUpInside" id="PNp-12-l8s"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-pJ-MSz">
+                            <rect key="frame" x="103.5" y="0.0" width="103.5" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="历史" backgroundImage="jiance_topButton_n.png">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="jiance_topButton_s.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="topButtonClick:" destination="-1" eventType="touchUpInside" id="JCn-I0-yKO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooU-c3-pvc">
+                            <rect key="frame" x="207" y="0.0" width="103.5" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="统计" backgroundImage="jiance_topButton_n.png">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="jiance_topButton_s.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="topButtonClick:" destination="-1" eventType="touchUpInside" id="a5Z-Tc-bPm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNX-oZ-g2G">
+                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="报警" backgroundImage="jiance_topButton_n.png">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="jiance_topButton_s.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="topButtonClick:" destination="-1" eventType="touchUpInside" id="wUT-bp-r7w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="R9C-40-uWF"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hvc-f5-s6f" secondAttribute="trailing" id="75X-dG-VId"/>
+                <constraint firstItem="7Sc-35-qNh" firstAttribute="top" secondItem="hvc-f5-s6f" secondAttribute="bottom" constant="4" id="GkL-QW-ffY"/>
+                <constraint firstItem="hvc-f5-s6f" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Jvd-os-ITC"/>
+                <constraint firstItem="7Sc-35-qNh" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Tit-uU-UZB"/>
+                <constraint firstItem="hvc-f5-s6f" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="rqr-ZZ-zEj"/>
+                <constraint firstItem="7Sc-35-qNh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="wGA-px-8Cj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="7Sc-35-qNh" secondAttribute="bottom" id="yQh-KF-hVT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-972" y="-396"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiance_topButton_n.png" width="38.400001525878906" height="16.799999237060547"/>
+        <image name="jiance_topButton_s.png" width="38.400001525878906" height="16.799999237060547"/>
+    </resources>
+</document>
